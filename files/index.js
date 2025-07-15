@@ -2,14 +2,14 @@ const express = require("express");
 const app = express();
 const { exec, execSync } = require('child_process');
 const port = process.env.SERVER_PORT || process.env.PORT || 3000;        
-const UUID = process.env.UUID || '59c63d49-88da-4236-b1d8-cd409e4b1e9d'; //
+const UUID = process.env.UUID || '04180218-ace5-4c81-a6c6-96a80d3ce128'; //
 const NEZHA_SERVER = process.env.NEZHA_SERVER || '';     
 const NEZHA_PORT = process.env.NEZHA_PORT || '';                     //
 const NEZHA_KEY = process.env.NEZHA_KEY || '';   //
 const ARGO_DOMAIN = process.env.ARGO_DOMAIN || '';     //
 const ARGO_AUTH = process.env.ARGO_AUTH || '';
 const CFIP = process.env.CFIP || 'www.visa.com.tw';
-const NAME = process.env.NAME || 'Choreo-US';
+const NAME = process.env.NAME || 'Choreo';
 
 // root route
 app.get("/", function(req, res) {
